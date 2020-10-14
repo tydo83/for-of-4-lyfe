@@ -2,6 +2,109 @@
  * YOUR CODE HERE *
  ******************/
 
+//General Looping Problems
+const addAll = function(numArray) {
+  let sum = 0;
+  // for(i = 0; i < numArray.length; i++) {
+  //   sum += numArray[i]
+  // }
+  for(const num of numArray) {
+    sum += num;
+  }
+  return sum;
+} 
+
+const countSpaces = function(string) {
+  let count = 0;
+  for(const char of string) {
+    if(char === ' ') {
+      count++;
+    }
+  }
+  return count;
+}
+
+const countTrues = function(boolArray) {
+  let count = 0;
+  for(const bool of boolArray) {
+    if(bool == true) {
+      count++;
+    }
+  }
+  return count;
+}
+
+const makeFriendly = function(str) {
+  let newStr = '';
+  for(const char of str) {
+    if(char === '.'){
+      newStr += '!';
+    }
+    else {
+      newStr += char;
+    }
+  }
+  return newStr; 
+}
+
+//Maps
+const cubeAll = function(numArray) {
+  const cubeArray = [];
+  for(const num of numArray) {
+    cubeArray.push(num * num * num);
+  }
+  return cubeArray;
+}
+
+const addNoise = function(strArray) {
+  const withNoise = [];
+  noise = ["Woof!", "Meow!", "ROWR"]
+  for(const animal of strArray) {
+    withNoise.push(animal + ' says')  
+  
+  }
+  return withNoise;
+}
+const dogs = [
+  'Fido',
+  'Rolph',
+  'Maisie',
+];
+a = addNoise(dogs);
+a;
+
+['Fido says "Woof!"', 'Garfield says "Meow!"', 'Sharp Tooth says "ROWR."'];
+
+
+//Filters
+const womenOnly = function(strArray) {
+  const onlyWomen = [];
+  for(const char of strArray) {
+    if(char.charAt(char.length-1) == 'F')
+      onlyWomen.push(char);
+  }
+  return onlyWomen;
+}
+
+const integersOnly = function(numArray) {
+  const integers = [];
+  for(const num of numArray) {
+    if(num % 1 == 0) {
+      integers.push(num);
+    }
+  }
+  return integers;
+}
+
+// const nums1 = [5, -5, 0.5]
+// a = integersOnly(nums1);
+// a;
+
+// const nums2 = [0.9, 8, -100, 0.3];
+// b = integersOnly(nums2);
+// b;
+
+
 
 
 
