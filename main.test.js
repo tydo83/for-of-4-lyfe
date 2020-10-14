@@ -56,24 +56,32 @@ const cubeAll = function(numArray) {
   return cubeArray;
 }
 
-const addNoise = function(strArray) {
+const addNoises = function(animalArray) {
+  const dogs = [
+    'Fido',
+    'Rolph',
+    'Maisie',
+  ];
+  const cats = [
+    'Garfield',
+    'Heathcliff',
+  ];
+  const dinos = [
+    'Barnie',
+    'Sharp Tooth',
+  ];
   const withNoise = [];
-  noise = ["Woof!", "Meow!", "ROWR"]
-  for(const animal of strArray) {
-    withNoise.push(animal + ' says')  
-  
+  for(const animal of animalArray) {
+    if(dogs.includes(animal))
+    withNoise.push(animal + ' says' + ' "Woof!"');  
+    if(cats.includes(animal))
+    withNoise.push(animal + ' says' + ' "Meow!"');
+    if(dinos.includes(animal))
+    withNoise.push(animal + ' says' + ' "ROWR."');
   }
   return withNoise;
 }
-const dogs = [
-  'Fido',
-  'Rolph',
-  'Maisie',
-];
-a = addNoise(dogs);
-a;
-
-['Fido says "Woof!"', 'Garfield says "Meow!"', 'Sharp Tooth says "ROWR."'];
+//Switch? and Compound boolean?
 
 
 //Filters
