@@ -48,6 +48,7 @@ const makeFriendly = function(str) {
 }
 
 //Maps
+
 const cubeAll = function(numArray) {
   const cubeArray = [];
   for(const num of numArray) {
@@ -56,6 +57,7 @@ const cubeAll = function(numArray) {
   return cubeArray;
 }
 
+// .includes method 
 const addNoises = function(animalArray) {
   const dogs = [
     'Fido',
@@ -81,14 +83,75 @@ const addNoises = function(animalArray) {
   }
   return withNoise;
 }
-//Switch? and Compound boolean?
+
+// Compound boolean
+// const addNoises = function(animalArray) {
+//   const withNoise = [];
+//   for(const animal of animalArray) {
+//     if(animal === 'Fido' || animal === 'Rolph' || animal === 'Maisie')
+//     withNoise.push(animal + ' says' + ' "Woof!"');  
+//     if(animal === 'Garfield' || animal === 'Heathcliff') 
+//     withNoise.push(animal + ' says' + ' "Meow!"');
+//     if(animal === 'Barnie' || animal === 'Sharp Tooth')
+//     withNoise.push(animal + ' says' + ' "ROWR."');
+//   }
+//   return withNoise;
+// }
+
+//Switch practice
+// const addNoises = function(animalArray) {
+//   const withNoise = [];
+//   for(const animal of animalArray) {
+//     switch(animal) {
+//     case 'Fido': 
+//     withNoise.push('Fido' + ' says' + ' "Woof!"');  
+//     break;
+//     case 'Garfield': 
+//     withNoise.push(animal + ' says' + ' "Meow!"');
+//     break;
+//     case 'Barnie': 
+//     withNoise.push(animal + ' says' + ' "ROWR."');
+//     }
+//   }
+//   return withNoise;
+// }
+
+// const animals1 = ['Fido', 'Garfield', 'Sharp Tooth'];
+// a = addNoises(animals1);
+// a;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 //Filters
+
+//charAt
+// const womenOnly = function(strArray) {
+//   const onlyWomen = [];
+//   for(const char of strArray) {
+//     if(char.charAt(char.length-1) == 'F')
+//       onlyWomen.push(char);
+//   }
+//   return onlyWomen;
+// }
+
+//endsWith
 const womenOnly = function(strArray) {
   const onlyWomen = [];
   for(const char of strArray) {
-    if(char.charAt(char.length-1) == 'F')
+    if(char.endsWith('F'))
       onlyWomen.push(char);
   }
   return onlyWomen;
@@ -111,11 +174,6 @@ const integersOnly = function(numArray) {
 // const nums2 = [0.9, 8, -100, 0.3];
 // b = integersOnly(nums2);
 // b;
-
-
-
-
-
 
 
 
